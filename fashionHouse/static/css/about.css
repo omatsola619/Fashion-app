@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.navbar ul li a{
+    margin-left: 30px;
+}
+/*styling for overlay nav*/
+.overlay{
+    visibility: collapse;
+     
+}
+.navbar ul li a{
+  font-size: 20px;
+}
+.menu{
+    width: 20px;
+    cursor: pointer;
+    visibility: collapse;
+}
+.explain{
+    font-size: 20px;
+}
+.top{
+    font-family: 'caveat';
+}
+/*media query for smaller screen*/
+
+@media screen and (max-width: 767px){
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        visibility: visible;
+      }
+      .menu{
+        visibility: visible;
+    }
+      
+      .overlay-content {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+    }
+      @media screen and (max-height: 450px) {
+        .overlay a {
+            font-size: 20px
+        }
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        
+      }
+
+      /*footer styling*/
+      footer .end{
+        color: white;
+    }
+    footer .end ul li{
+        list-style: none;
+    }
+    footer .end ul li a{
+        text-decoration: none;
+    }
+    footer{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .footer-dark .item.social > a {
+        font-size: 20px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+        margin: 0 8px;
+        color: #fff;
+        opacity: 0.75;
+      }
+      .footer-dark .copyright {
+        text-align: center;
+        padding-top: 24px;
+        opacity: 0.3;
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+      
+    .footer-dark ul li a{
+        color: white;
+    } 

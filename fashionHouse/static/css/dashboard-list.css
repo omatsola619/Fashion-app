@@ -1,0 +1,161 @@
+body{
+    font-family: 'Dosis';
+  }
+  header h1{
+    font-family: 'caveat';
+  }
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom,crimson, rgb(71, 7, 20));
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+   
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav h3{
+    font-size: 20px;
+  }
+  .sidenav a:hover {
+    color: crimson;
+    background: white;
+    transition: 0.6s;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .use{
+    background-color: rgba(179, 179, 226, 0.336);
+  }
+  .bnav{
+    display: flex;
+    justify-content: center;
+  }
+  .bnav li{
+    text-decoration: none;
+    list-style: none;
+  }
+  .bnav li a{
+    font-size: 25px;
+    font-family: 'caveat';
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #dc143c;
+  }
+  @media screen and (max-width: 600px) {
+    .bnav{
+      display: inline;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .top{
+      margin-left: 150px;
+    }
+  }
+  .card-body .card-text{
+    font-size: 15px;
+  }
+/*table styling*/
+.table-wrapper {
+    width: 100%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;	
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+}
+.table-title h2 {
+    margin: 6px 0 0;
+    font-size: 22px;
+}
+.table-title .add-new {
+    float: right;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 50px;
+    line-height: 13px;
+}
+.table-title .add-new i {
+    margin-right: 4px;
+}
+table.table {
+    table-layout: fixed;
+}
+table.table tr th, table.table tr td {
+    border-color: #e9e9e9;
+}
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+table.table th:last-child {
+    width: 100px;
+}
+table.table td a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 24px;
+}    
+tr td{
+    font-size: 20px;
+}
+tr th{
+    font-size: 22px;
+}
+table.table td a.add {
+    color: #27C46B;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+table.table td i {
+    font-size: 19px;
+}
+table.table td a.add i {
+    font-size: 24px;
+    margin-right: -1px;
+    position: relative;
+    top: 3px;
+}    
+table.table .form-control {
+    height: 32px;
+    line-height: 32px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+table.table .form-control.error {
+    border-color: #f50000;
+}
+table.table td .add {
+    display: none;
+}

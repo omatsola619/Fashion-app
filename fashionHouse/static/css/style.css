@@ -1,0 +1,513 @@
+/*color scheme for fashion house
+ USE
+Ultra Violet (#5F4B8BFF) 
+AND
+Blooming Dahlia (#E69A8DFF)
+*/
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*navbar styling*/
+.navbar-brand{
+    font-size: 25px;
+}
+
+.navbar{
+    position: sticky;  
+}
+.sec{
+    color: goldenrod; 
+}
+.navbar ul li a{
+    font-size: 20px;
+    margin: 0 25px;
+}
+.collapse ul{
+    margin-left: 80px;
+}
+.upload{
+    margin-left: 58px;
+}
+header{
+    position: relative;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.616) ), url('../images/tayo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    z-index: 2;
+}
+.menu{
+    width: 20px;
+    cursor: pointer;
+    visibility: collapse;
+}
+.intro{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 20px;
+    padding-left: auto;
+    padding-right: auto; 
+    text-align: center;   
+}
+.intro h2{
+    font-size: 40px;
+}
+.top-image{
+    position: absolute;
+    top: -100px;
+}
+.learn{
+    background: crimson;
+    color: white;
+    margin-top: 15px;
+    height: 50px;
+    width: 150px;
+    border-radius: 0%;
+}
+.learn:hover{
+    background: rgb(156, 16, 44);
+    color: white;
+}
+.overlay{
+    visibility: collapse;
+}
+/*main styling*/
+/*
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+*/
+/* The overlay effect - lays on top of the container and over the image */
+
+/*THE NEW GALLERY FOR TESTING THE IMAGES FOR NEW WAYS OF ARRANGING THEM*/
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/*end of column styling*/
+.image-container {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+.image-container p {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+  color: #FFF;
+  padding: 5px;
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+}
+.image-container:hover p {
+  display: block;
+  background: rgba(0, 0, 0, .6);
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+/*END OF IMAGE TESTING, YOU CAN NOW DELETE IF NOT NEEDED */
+.feat{
+    background: crimson;
+    height: 300px;
+}
+.feat h3{
+    display: flexbox;
+    color: white;
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.feat button{
+    background: white;
+    color: crimson;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.highlight-wing {
+    text-align: center;
+    color: #313437;
+    background-color: #eef4f7;
+    padding: 50px 0 55px;
+    overflow: hidden;
+  }
+  .highlight-wing .container .intro{
+    position: relative;
+    top: 6%;
+}
+
+
+/*footer styling*/
+footer .end{
+    color: white;
+}
+footer .end ul li{
+    list-style: none;
+}
+footer .end ul li a{
+    text-decoration: none;
+}
+footer{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.footer-dark .item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+  }
+  .footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  
+.footer-dark ul li a{
+    color: white;
+} 
+/*styling for testimonial*/
+.testimonials-clean {
+    color: #313437;
+    background-color: #eef4f7;
+  }
+  
+  .testimonials-clean p {
+    color: #7d8285;
+  }
+  
+  .testimonials-clean h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+  }
+  
+  @media (max-width:767px) {
+    .testimonials-clean h2 {
+      margin-bottom: 25px;
+      padding-top: 25px;
+      font-size: 24px;
+    }
+  }
+  
+  .testimonials-clean .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .testimonials-clean .intro p {
+    margin-bottom: 0;
+  }
+  
+  .testimonials-clean .people {
+    padding: 50px 0 20px;
+  }
+  
+  .testimonials-clean .item {
+    margin-bottom: 32px;
+  }
+  
+  @media (min-width:768px) {
+    .testimonials-clean .item {
+      height: 220px;
+    }
+  }
+  
+  .testimonials-clean .item .box {
+    padding: 30px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .testimonials-clean .item .box:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -24px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-width: 12px 15px;
+    border-top-color: #fff;
+  }
+  
+  .testimonials-clean .item .author {
+    margin-top: 28px;
+    padding-left: 25px;
+  }
+  
+  .testimonials-clean .item .name {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: inherit;
+  }
+  
+  .testimonials-clean .item .title {
+    font-size: 13px;
+    color: #9da9ae;
+  }
+  
+  .testimonials-clean .item .description {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  
+  .testimonials-clean .item img {
+    max-width: 40px;
+    float: left;
+    margin-right: 12px;
+    margin-top: -5px;
+  }
+/*just a hover image test
+
+.vividworknav {
+  
+  height: auto;
+  float: left;
+  padding: 0;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+.vividworknav:hover .work-text-content {
+  visibility: visible;
+  opacity: 1.0;
+}
+.vividworknav:hover {
+  opacity: 0.8;
+}
+.work-text-content {
+  width: 33.333%;
+  height: auto;
+  visibility: hidden;
+  z-index: 100;
+  position: absolute;
+  color: crimson;
+  font-family: 'Ubuntu', sans-serif;
+  left: 30%;
+  top: 80%;
+  font-size: 24px;
+  text-align: center;
+  -webkit-transition: visibility opacity 2.0Ms;
+}
+
+
+end of hover image test*/
+    
+    
+    
+    
+  
+  
+/*media queries starts here*/
+
+@media screen and (max-width: 870px) {
+    .intro{
+        top: 22%;
+    }
+    .intro h2{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .highlight-wing{
+        margin-top: 0;
+        padding: 5px;
+        height: 300px;
+    }
+    .highlight-wing .container .wing img{
+        visibility: collapse;
+    }
+    .highlight-wing .container .intro{
+        display: flexbox;
+        position: relative;
+        top: -30%;
+        
+    }
+    .intro{
+    padding-top: 70px;
+    padding-left: auto;
+    padding-right: auto; 
+    text-align: center; 
+    font-size: 25px;
+    margin: 0 3px;
+    }
+    .intro h2{
+        font-size: 25px;
+    }
+    .intro p{
+        font-size: 14px;
+    }
+    header{
+        height: 530px;
+    }
+    .collapse ul{
+        margin-left: 0;
+    }
+    .upload{
+        margin-left: 0;
+    }
+    .top-image{
+        position: relative;
+        top: -40px;
+    }
+    .learn{
+        width: 150px;
+    }
+    .menu{
+        visibility: visible;
+    }
+    
+    /*styling for the fullscreen nav*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    visibility: visible;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+}
+  @media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    
+  }
+
+/*end of styling for the fullscreen nav*/   
+
+
+@media screen and (max-width: 365px){
+    .navbar a{
+        padding-left: 0;
+    }
+    header{
+        height: 400px;
+    }
+    .intro{
+        padding-top: 20px;
+        padding-left: auto;
+        padding-right: auto; 
+        text-align: center; 
+        font-size: 15px;
+        }
+    .intro h2{
+        font-size: 25px;
+    }
+    .highlight-wing .container .intro{
+        position: relative;
+        top: -10%;
+    }
+    .highlight-wing{
+        padding: 5px;
+        height: 400px;
+    }
+    .learn {
+        height: 40px;
+    }
+}

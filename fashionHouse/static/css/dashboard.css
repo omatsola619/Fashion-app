@@ -1,0 +1,76 @@
+body{
+  font-family: 'Dosis';
+}
+header h1{
+  font-family: 'caveat';
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom,crimson, rgb(71, 7, 20));
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+ 
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidenav h3{
+  font-size: 20px;
+}
+.sidenav a:hover {
+  color: crimson;
+  background: white;
+  transition: 0.6s;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.use{
+  background-color: rgba(179, 179, 226, 0.336);
+}
+.bnav{
+  display: flex;
+  justify-content: center;
+}
+.bnav li{
+  text-decoration: none;
+  list-style: none;
+}
+.bnav li a{
+  font-size: 25px;
+  font-family: 'caveat';
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #dc143c;
+}
+@media screen and (max-width: 600px) {
+  .bnav{
+    display: inline;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top{
+    margin-left: 150px;
+  }
+}
+.card-body .card-text{
+  font-size: 15px;
+}

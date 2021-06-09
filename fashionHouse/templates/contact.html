@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Work+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/contact.css">
+    <title>Contact-Fashion house</title>
+  </head>
+  <body>
+<header> 
+<!--navar-->
+<nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <div class="container-fluid"><a class="navbar-brand" href="index.html">Fashion House</a>
+        <span><img src="../static/images/item.png" class="menu" onclick="openNav()"> </span>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav mx-auto">
+                <li role="presentation" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="stores.html">Store</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="contact.html">Contact</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="adminLogIn.html">Admin Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--navigation menu for mobile devices-->
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="stores.html">Store</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="adminLogIn.html">Admin Login</a>
+    </div>
+  </div>
+</nav>
+</header>
+<main>
+    <div class="contact-clean">
+        <!--social media links-->
+<div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+        <form method="post">
+            <h2 class="text-center">Contact us</h2>
+            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" /></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" /></div>
+            <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+            <div class="form-group"><button class="btn btn-default" type="submit">Send </button></div>
+        </form>
+    </div>
+
+</main>
+
+
+<footer>
+  <div class="footer-dark bg-dark end pt-5 mt-5">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Fashion design</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Training</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Fashion House</h3>
+                    <p>
+                      Fashion house is a website for Fashion designers and Tailors to post their designs,
+                      clothes and styles ,for customers and fashion lovers to see the designs of tailors
+                       and contact the designer.
+                    
+                      </p>
+                </div>
+                <div class="col item social">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-snapchat"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <p class="copyright">Fashion House © 2021</p>
+        </div>
+    </footer>
+</div>
+</footer>
+
+
+    <!--script for nav-->
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+    <!--end of script for nav-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
